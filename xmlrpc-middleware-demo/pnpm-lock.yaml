@@ -19,6 +19,9 @@ dependencies:
   zhi-lib-base:
     specifier: ^0.0.2
     version: 0.0.2
+  zhi-xmlrpc-middleware:
+    specifier: ^0.1.0
+    version: 0.1.0
 
 devDependencies:
   '@terwer/eslint-config-custom':
@@ -3080,6 +3083,18 @@ packages:
       zhi-lib-base: 0.0.2
     dev: false
 
+  /zhi-device@1.0.0:
+    resolution: {integrity: sha512-0ONGgU6B890fVhVrBbeFDutpxPy+rmnP1EFAZYrzCbWXGqZmsnVNFT3gBeA+c36bEvo2IilKe2gg7CoHcraubw==}
+    dev: false
+
   /zhi-lib-base@0.0.2:
     resolution: {integrity: sha512-0iO8/F3qHtkO2cF5LppV1MzaR5E2E6iZfGyR409CIaPAFKKkQMyQ6ZA1cFlxjSLs07ZONMqiEGCjDmVATnG3ag==}
+    dev: false
+
+  /zhi-xmlrpc-middleware@0.1.0:
+    resolution: {integrity: sha512-r5MPV1le6rsKKDIhr4pYB124pD0UZZA8qv08FJfWiq0Bal8koYzbaEJdJfW2+GE6TcpY+6PlWV+th2HU8y3iHw==}
+    dependencies:
+      zhi-common: 1.8.1
+      zhi-device: 1.0.0
+      zhi-lib-base: 0.0.2
     dev: false
