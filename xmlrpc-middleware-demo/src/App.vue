@@ -14,6 +14,7 @@ import ChromeXmlrpcTest from "./components/ChromeXmlrpcTest.vue"
     </a>
   </div>
   <middleware-xmlrpc-test />
+  <hr />
   <chrome-xmlrpc-test />
 </template>
 
