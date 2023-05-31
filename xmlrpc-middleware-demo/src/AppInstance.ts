@@ -1,5 +1,5 @@
 import { create } from "xmlbuilder2"
-import { SimpleXmlRpcClient } from "simple-xmlrpc"
+import { Deserializer, Serializer, SimpleXmlRpcClient, XmlrpcUtil } from "simple-xmlrpc"
 import fetch from "cross-fetch"
 
 export class AppInstance {
@@ -12,6 +12,9 @@ export class AppInstance {
     }
     appInstance.simpleXmlrpc = {
       SimpleXmlRpcClient: SimpleXmlRpcClient,
+      Serializer: Serializer,
+      Deserializer: Deserializer,
+      XmlrpcUtil: XmlrpcUtil,
     }
     return appInstance
   }

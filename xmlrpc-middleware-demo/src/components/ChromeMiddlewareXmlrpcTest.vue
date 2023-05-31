@@ -1,13 +1,12 @@
 <script setup lang="ts">
 import { AppInstance } from "../AppInstance.ts"
-import { fetchChromeMiddleware } from "../test/chromeMiddlewareXmlrpc.ts"
+import { CommonXmlrpcClient } from "zhi-xmlrpc-middleware"
 
 const testGetUsersBlogs = async () => {
   const appInstance = AppInstance.instance()
+  const commonXmlrpcClient = new CommonXmlrpcClient(appInstance, "http://127.0.0.1:8000/xmlrpc.php")
 
-  const result = await fetchChromeMiddleware(
-    appInstance,
-    "http://127.0.0.1:8000/xmlrpc.php",
+  const result = await commonXmlrpcClient.methodCall(
     "metaWeblog.getUsersBlogs",
     ["", "terwer", "123456"],
     "http://127.0.0.1:3000/api/middleware"
