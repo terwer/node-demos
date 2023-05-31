@@ -15,8 +15,7 @@
     "vue": "^3.3.4",
     "xmlbuilder2": "^3.1.1",
     "zhi-common": "^1.8.1",
-    "zhi-lib-base": "^0.0.2",
-    "zhi-xmlrpc-middleware": "^0.0.6"
+    "zhi-lib-base": "^0.0.2"
   },
   "devDependencies": {
     "@terwer/eslint-config-custom": "^1.2.0",
