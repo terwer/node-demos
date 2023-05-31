@@ -1,4 +1,4 @@
-import xmlbuilder2 from "xmlbuilder2"
+import { create } from "xmlbuilder2"
 import { SimpleXmlRpcClient } from "simple-xmlrpc"
 import fetch from "cross-fetch"
 
@@ -7,7 +7,9 @@ export class AppInstance {
     // appInstance
     const appInstance: any = {}
     appInstance.fetch = fetch
-    appInstance.xmlbuilder2 = xmlbuilder2
+    appInstance.xmlbuilder2 = {
+      create: create,
+    }
     appInstance.simpleXmlrpc = {
       SimpleXmlRpcClient: SimpleXmlRpcClient,
     }

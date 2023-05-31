@@ -12,4 +12,8 @@ export default defineConfig({
       protocolImports: true,
     }),
   ],
+
+  build: {
+    minify: false,
+  },
 })

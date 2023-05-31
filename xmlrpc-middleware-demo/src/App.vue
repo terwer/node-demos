@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import XmlrpcTest from "./components/XmlrpcTest.vue"
 import MiddlewareXmlrpcTest from "./components/MiddlewareXmlrpcTest.vue"
 import ChromeXmlrpcTest from "./components/ChromeXmlrpcTest.vue"
+import ChromeMiddlewareXmlrpcTest from "./components/ChromeMiddlewareXmlrpcTest.vue"
 </script>
 
 <template>
@@ -14,6 +14,8 @@ import ChromeXmlrpcTest from "./components/ChromeXmlrpcTest.vue"
     </a>
   </div>
   <middleware-xmlrpc-test />
+  <hr />
+  <chrome-middleware-xmlrpc-test />
   <hr />
   <chrome-xmlrpc-test />
 </template>
