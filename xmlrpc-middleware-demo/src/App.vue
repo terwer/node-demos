@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import XmlrpcTest from "./components/XmlrpcTest.vue"
+import MiddlewareXmlrpcTest from "./components/MiddlewareXmlrpcTest.vue"
+import ChromeXmlrpcTest from "./components/ChromeXmlrpcTest.vue"
 </script>
 
 <template>
@@ -11,7 +13,8 @@ import XmlrpcTest from "./components/XmlrpcTest.vue"
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <xmlrpc-test />
+  <middleware-xmlrpc-test />
+  <chrome-xmlrpc-test />
 </template>
 
 <style scoped>
