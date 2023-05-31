@@ -1,0 +1,17 @@
+{
+  "name": "request-proxy-demo",
+  "version": "1.0.0",
+  "description": "a simple http proxy",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "http",
+    "proxy"
+  ],
+  "author": "terwer",
+  "license": "GPL",
+  "dependencies": {
+    "http-proxy-middleware": "^2.0.6"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "demo for testing",
+  "scripts": {
+    "dev": "ts-node-esm --experimental-specifier-resolution=node ./test.ts"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "terwer",
+  "license": "GPL",
+  "dependencies": {
+    "simple-xmlrpc": "^1.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1"
+  }
+}
