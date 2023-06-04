@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import MiddlewareFetchTest from "./components/MiddlewareFetchTest.vue"
+import ChromeFetchTest from "./components/ChromeFetchTest.vue"
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import MiddlewareFetchTest from "./components/MiddlewareFetchTest.vue"
     </a>
   </div>
   <middleware-fetch-test />
+  <chrome-fetch-test />
 </template>
 Ø
 <style scoped>
