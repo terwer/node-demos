@@ -4,7 +4,9 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 
 // 这里的 origin 和 target 分别是前端网站的地址和 WordPress 网站的地址
-const origin = 'http://127.0.0.1:5173';
+// * 代表允许所有的跨域，否则只允许白名单
+const origin = '*';
+// const origin = 'http://127.0.0.1:5173';
 const target = 'http://127.0.0.1:8000';
 
 // 添加自定义中间件处理 CORS 问题
