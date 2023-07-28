@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "esModuleInterop": true,
+    "outDir": "./dist"
+  },
+  "include": [
+    "./**/*.vue",
+    "./**/*.ts",
+    "./**/*.spec.ts"
+  ],
+  "exclude": [
+    "./dist"
+  ]
+}

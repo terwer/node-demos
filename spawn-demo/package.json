@@ -1,0 +1,28 @@
+{
+  "name": "spawn-demo",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "a demo for spawn using in electron",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "repository": "terwer/node-demos",
+  "homepage": "https://github.com/terwer/node-demos/tree/main/spawn-demo",
+  "author": "terwer",
+  "license": "MIT",
+  "keywords": [
+    "spawn",
+    "demo",
+    "electron"
+  ],
+  "scripts": {
+    "dev": "zhi-build --watch",
+    "build": "zhi-build --production",
+    "test": "vitest",
+    "lint": "eslint 'src/**/*.{ts,js}' --fix"
+  },
+  "devDependencies": {
+    "@terwer/esbuild-config-custom": "latest",
+    "@terwer/eslint-config-custom": "latest",
+    "@terwer/vitest-config-custom": "latest"
+  }
+}
